@@ -320,7 +320,7 @@ const App = () => {
             onMouseEnter={() => handleMouseEnter('text')}
             onMouseLeave={handleMouseLeave}
           >
-            EEE Student @ NIT Calicut | Robotics Enthusiast | AI/ML Explorer | App Developer in Progress
+            EEE Student @ NIT Calicut | Robotics Enthusiast | AI/ML Explorer | ROS Developer in Progress
           </p>
           <div className="flex justify-center space-x-6">
             <a 
@@ -344,7 +344,7 @@ const App = () => {
               <Linkedin size={24} />
             </a>
             <a 
-              href="mailto:k.a.harissh2019@gmail.com" 
+              href="mailto:k.a.harish2019@gmail.com" 
               className="p-3 bg-gray-800 rounded-full hover:bg-red-500 transition-colors"
               onMouseEnter={() => handleMouseEnter('hover')}
               onMouseLeave={handleMouseLeave}
