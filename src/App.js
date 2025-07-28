@@ -393,7 +393,7 @@ const App = () => {
                 JEE Main 98.88 percentile achiever and NIT Calicut EEE student with certifications in 
                 Python and Data Science. Currently pursuing AI/ML certification from DeepLearning.ai & 
                 Stanford. From clearing NDA prelims to completing Dakshin Bharat Hindi Prachar Sabha's 
-                8 exams, I love tackling diverse challenges.
+                8 exams, I love learning new things.
               </p>
               <p 
                 className="text-lg leading-relaxed mb-6"
@@ -402,11 +402,11 @@ const App = () => {
               >
                 When I'm not building robots or training models, you'll find me exploring the beautiful 
                 world of physics, capturing moments through photography, or dominating the football field. 
-                Fun fact: I've won medals in science & math and even made it to state-level spelling bee! 
+                 I've won medals in science & math and even made it to state-level spelling bee too!
                 Physics isn't just a subject for me - it's pure magic! ⚡
               </p>
               <div className="flex flex-wrap gap-2">
-                {['Python', 'TensorFlow', 'Pandas', 'Arduino', 'OpenCV', 'Photography', '⚽ Football'].map((tech) => (
+                {['Python', 'TensorFlow', 'Pandas', 'Arduino', 'OpenCV', 'Photography', 'verilog'].map((tech) => (
                   <span 
                     key={tech} 
                     className="px-3 py-1 bg-gray-800 rounded-full text-sm border border-gray-700 hover:border-green-400 transition-colors"
@@ -442,7 +442,7 @@ const App = () => {
               <div className="flex items-center justify-between mb-4">
                 <Code className="text-green-400" size={24} />
                 <a 
-                  href="https://github.com/magneticstray/RoboVacuum"
+                  href="https://github.com/magneticstray/RoboVacuum.git"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-green-400 transition-colors"
@@ -466,19 +466,19 @@ const App = () => {
               onMouseLeave={handleMouseLeave}
             >
               <div className="flex items-center justify-between mb-4">
-                <Zap className="text-yellow-400" size={24} />
-                <div className="flex items-center gap-2">
-                  <span className="px-2 py-1 bg-yellow-400/20 text-yellow-400 rounded text-xs">In Progress</span>
-                  <button 
-                    className="text-gray-400 hover:text-yellow-400 transition-colors"
-                    onClick={() => alert('Please provide the project link!')}
-                  >
-                    <ExternalLink size={16} />
-                  </button>
-                </div>
+                <Code className="text-green-400" size={24} />
+                <a 
+                  href="https://github.com/magneticstray/Avibot-dashboard.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-green-400 transition-colors"
+                >
+                  <ExternalLink size={16} />
+                </a>
               </div>
+                
               <h3 className="text-xl font-bold mb-2">AviBot - Egg Picker & Sorter</h3>
-              <p className="text-gray-300 mb-4">Developing an autonomous robot for poultry farms that intelligently picks and sorts eggs using computer vision and robotic manipulation.</p>
+              <p className="text-gray-300 mb-4">Developing an gui for autonomous robot for poultry farms that intelligently picks and sorts eggs using computer vision and robotic manipulation.</p>
               <div className="flex flex-wrap gap-2">
                 <span className="px-2 py-1 bg-gray-700 rounded text-xs">Computer Vision</span>
                 <span className="px-2 py-1 bg-gray-700 rounded text-xs">OpenCV</span>
@@ -587,7 +587,7 @@ const App = () => {
               <div className="bg-gray-800 rounded-lg p-8 border border-gray-700 hover:border-blue-400 transition-all duration-300 hover:scale-105">
                 <Terminal className="text-blue-400 mx-auto mb-4" size={48} />
                 <h3 className="text-xl font-bold mb-4">AI & Machine Learning</h3>
-                <p className="text-gray-300">Python, TensorFlow, OpenCV, Computer Vision, Neural Networks</p>
+                <p className="text-gray-300">Python, OpenCV, Computer Vision, Neural Networks</p>
               </div>
             </div>
             <div 
@@ -629,7 +629,7 @@ const App = () => {
           >
             <div className="text-green-400 mb-4">$ cat contact.txt</div>
             <div className="text-left">
-              <div className="mb-2">📧 Email: k.a.harissh2019@gmail.com</div>
+              <div className="mb-2">📧 Email: k.a.harish2019@gmail.com</div>
               <div className="mb-2">🐙 GitHub: github.com/magneticstray</div>
               <div className="mb-2">💼 LinkedIn: linkedin.com/in/harish-kumar-299b03322</div>
               <div className="mb-2">📍 Location: Kozhikode, Kerala, India</div>
