@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, Code, Zap, Terminal, ChevronDown, ExternalLink } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -651,6 +652,7 @@ const App = () => {
           </p>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 };
