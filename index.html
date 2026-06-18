@@ -8,180 +8,183 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">HK.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
-        <header class="fade-in">
-            <div class="header-content">
-                <div class="header-text">
-                    <h1>Harish Kumar K A</h1>
-                    <p class="subtitle">Electrical & Electronics Engineering | Embedded Systems Intern at Linumiz</p>
-                    <div class="contact-links">
-                        <a href="mailto:k.a.harish2019@gmail.com" target="_blank">k.a.harish2019@gmail.com</a> •
-                        <a href="tel:+919345548578">+91 93455 48578</a>
-                        <br>
-                        <a href="#" target="_blank">LinkedIn</a> •
-                        <a href="#" target="_blank">GitHub</a> •
-                        <a href="#" target="_blank">Portfolio</a>
-                    </div>
+        <header class="hero hidden">
+            <div class="hero-content">
+                <p class="greeting">Hi, my name is</p>
+                <h1 class="glitch" data-text="Harish Kumar K A">Harish Kumar K A</h1>
+                <h2 class="subtitle">Electrical & Electronics Engineering <br> <span class="highlight">Embedded Systems Intern @ Linumiz</span></h2>
+                <p class="hero-desc">I build and debug real-time microcontroller systems, digital logic designs, and bridge the gap between hardware and software.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="mailto:k.a.harish2019@gmail.com" class="btn btn-outline">Say Hello</a>
                 </div>
             </div>
         </header>
 
         <main>
-            <section class="about fade-in" style="animation-delay: 0.1s;">
-                <h2>About Me</h2>
-                <p>Electrical and Electronics Engineering student at NIT Calicut (CGPA: 8.94) with hands-on embedded systems experience spanning PIC18 assembly, VHDL, and RISC-V architecture through an active embedded systems internship. Built and debugged real-time microcontroller systems, digital logic designs, and PCB layouts; comfortable across the embedded stack from register-level C to RTOS concepts.</p>
+            <section id="about" class="about hidden">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <p>I'm an Electrical and Electronics Engineering student at <strong>NIT Calicut (CGPA: 8.94)</strong> with hands-on embedded systems experience spanning PIC18 assembly, VHDL, and RISC-V architecture through an active embedded systems internship.</p>
+                    <p>I am comfortable across the embedded stack, from register-level C to RTOS concepts, and enjoy designing PCB layouts and digital logic designs.</p>
+                </div>
             </section>
 
-            <section class="skills fade-in" style="animation-delay: 0.2s;">
-                <h2>Technical Skills</h2>
+            <section id="skills" class="skills hidden">
+                <h2 class="section-title">Technical Skills</h2>
                 <div class="skills-grid">
-                    <div class="skill-category">
+                    <div class="skill-card">
                         <h3>Embedded & Architecture</h3>
-                        <p>Embedded C, Assembly, RISC-V, PIC18, STM32, Arduino, RTOS (Zephyr) concepts</p>
+                        <div class="tags">
+                            <span class="tag">Embedded C</span><span class="tag">Assembly</span><span class="tag">RISC-V</span><span class="tag">PIC18</span><span class="tag">STM32</span><span class="tag">Arduino</span><span class="tag">RTOS (Zephyr)</span>
+                        </div>
                     </div>
-                    <div class="skill-category">
+                    <div class="skill-card">
                         <h3>Digital Design</h3>
-                        <p>Verilog, VHDL, Digital Systems Design, VLSI, KiCad, PCB Design</p>
+                        <div class="tags">
+                            <span class="tag">Verilog</span><span class="tag">VHDL</span><span class="tag">VLSI</span><span class="tag">KiCad</span><span class="tag">PCB Design</span>
+                        </div>
                     </div>
-                    <div class="skill-category">
+                    <div class="skill-card">
                         <h3>Programming</h3>
-                        <p>C, Python (Data Science/ML), MATLAB</p>
+                        <div class="tags">
+                            <span class="tag">C</span><span class="tag">Python (ML/Data Science)</span><span class="tag">MATLAB</span>
+                        </div>
                     </div>
-                    <div class="skill-category">
+                    <div class="skill-card">
                         <h3>Tools & Platforms</h3>
-                        <p>Raspberry Pi, ROS2, Proteus, LTspice, Linux, Git, Gazebo, MPLAB</p>
+                        <div class="tags">
+                            <span class="tag">Raspberry Pi</span><span class="tag">ROS2</span><span class="tag">Proteus</span><span class="tag">LTspice</span><span class="tag">Linux</span><span class="tag">Git</span><span class="tag">Gazebo</span>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section class="experience fade-in" style="animation-delay: 0.3s;">
-                <h2>Experience</h2>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-header">
-                            <h3>Embedded Systems Intern</h3>
-                            <span class="duration">May/Jun 2026 – Present</span>
+            <section id="experience" class="experience hidden">
+                <h2 class="section-title">Experience & Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Embedded Systems Intern <span class="duration">May 2026 – Present</span></h3>
+                            <p class="organization">Linumiz | Hybrid</p>
+                            <ul>
+                                <li>Undergoing structured technical onboarding covering embedded C, VHDL, and RISC-V processor architecture.</li>
+                                <li>Working with open-source embedded codebases and toolchains as part of ongoing training.</li>
+                            </ul>
                         </div>
-                        <p class="organization">Linumiz | Hybrid (Offline + Online)</p>
-                        <ul>
-                            <li>Undergoing structured technical onboarding at an open-source embedded systems company, covering embedded C, VHDL, and RISC-V processor architecture.</li>
-                            <li>Working with open-source embedded codebases and toolchains as part of ongoing training before moving into independent contributions.</li>
-                        </ul>
-                    </li>
-                </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>B.Tech in Electrical and Electronics Engineering <span class="duration">2024 – 2028</span></h3>
+                            <p class="organization">National Institute of Technology Calicut (CGPA: 8.94)</p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section class="projects fade-in" style="animation-delay: 0.4s;">
-                <h2>Projects</h2>
-                <div class="project-list">
-                    <div class="project">
-                        <div class="project-header">
-                            <h3>Quadcopter for GPS-Denied Navigation</h3>
-                            <span class="duration">Jan 2026 – Present</span>
+            <section id="projects" class="projects hidden">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <p class="project-overline">Robotics / ROS2</p>
+                            <h3 class="project-title">Quadcopter for GPS-Denied Navigation</h3>
+                            <p class="project-desc">Assisting in development of a drone for Martian terrain identification, integrating optical flow and IMU data for stable navigation without GPS.</p>
+                            <div class="project-tech">
+                                <span>Nvidia Jetson Nano</span><span>Pixhawk</span><span>ROS2</span>
+                            </div>
                         </div>
-                        <p class="tech-stack">Nvidia Jetson Nano, Pixhawk, ROS2</p>
-                        <ul>
-                            <li>Assisting in development of a drone for Martian terrain identification, integrating optical flow and IMU data for stable navigation without GPS.</li>
-                        </ul>
                     </div>
 
-                    <div class="project">
-                        <div class="project-header">
-                            <h3>Reaction Timer (PIC18F452)</h3>
-                            <span class="duration">Oct 2025</span>
+                    <div class="project-card">
+                        <div class="project-content">
+                            <p class="project-overline">Embedded Systems</p>
+                            <h3 class="project-title">Reaction Timer (PIC18F452)</h3>
+                            <p class="project-desc">Programmed in Assembly to measure human reaction time using external interrupts and Timer0. Implemented debouncing logic and multiplexing for ±1ms accuracy.</p>
+                            <div class="project-tech">
+                                <span>Assembly</span><span>PIC18</span><span>Hardware</span>
+                            </div>
                         </div>
-                        <p class="tech-stack">Assembly, PIC18 Microcontroller</p>
-                        <ul>
-                            <li>Programmed in Assembly to measure human reaction time using external interrupts and Timer0.</li>
-                            <li>Implemented debouncing logic and 7-segment display multiplexing, achieving an accuracy of ±1ms.</li>
-                        </ul>
                     </div>
 
-                    <div class="project">
-                        <div class="project-header">
-                            <h3>Signals and Systems Project</h3>
-                            <span class="duration">Oct 2025</span>
+                    <div class="project-card">
+                        <div class="project-content">
+                            <p class="project-overline">Signal Processing</p>
+                            <h3 class="project-title">Signals and Systems Project</h3>
+                            <p class="project-desc">Built an Arduino-based sampling system (20 kHz) to capture analog waveforms, performed FFT in Python, and designed an astable multivibrator using 555 Timer.</p>
+                            <div class="project-tech">
+                                <span>Arduino</span><span>Python</span><span>MATLAB</span><span>Analog Design</span>
+                            </div>
                         </div>
-                        <p class="tech-stack">Arduino, Python, MATLAB, Analog Design</p>
-                        <ul>
-                            <li>Built an Arduino-based sampling system (up to 20 kHz) to capture analog waveforms from a 555 Timer circuit, then performed FFT in Python for frequency spectrum analysis.</li>
-                            <li>Designed and assembled an astable multivibrator circuit using a 555 Timer IC to generate continuous square wave outputs for signal processing tests.</li>
-                            <li>Developed a MATLAB script to visualize step-by-step convolution between triangular and rectangular pulses using numerical integration and real-time animation.</li>
-                        </ul>
                     </div>
 
-                    <div class="project">
-                        <div class="project-header">
-                            <h3>Variable Sine Wave Generator</h3>
-                            <span class="duration">Sept 2025</span>
+                    <div class="project-card">
+                        <div class="project-content">
+                            <p class="project-overline">Analog Design</p>
+                            <h3 class="project-title">Variable Sine Wave Generator</h3>
+                            <p class="project-desc">Designed and tested a variable frequency generator focusing on gain control and signal stability. Simulated performance using LTspice for low distortion.</p>
+                            <div class="project-tech">
+                                <span>Op-Amps</span><span>LTspice</span>
+                            </div>
                         </div>
-                        <p class="tech-stack">Op-Amps, Analog Design</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="extras hidden">
+                <h2 class="section-title">Certifications & Achievements</h2>
+                <div class="extras-grid">
+                    <div class="extra-card">
+                        <h3>Certifications</h3>
                         <ul>
-                            <li>Designed and tested a variable frequency generator focusing on gain control and signal stability.</li>
-                            <li>Simulated and verified circuit performance using LTspice to ensure low distortion levels.</li>
+                            <li>Digital Design with Verilog (2026)</li>
+                            <li>Machine Learning with Python (2025)</li>
+                            <li>Python for Data Science (2025)</li>
+                        </ul>
+                    </div>
+                    <div class="extra-card">
+                        <h3>Activities & Honors</h3>
+                        <ul>
+                            <li>Winner, Digital/Analog/Embedded Aptitude Test</li>
+                            <li>Junior Executive at Robotics Interest Group</li>
+                            <li>Neuromorphic IC Design Symposium</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <section class="education fade-in" style="animation-delay: 0.5s;">
-                <h2>Education</h2>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-header">
-                            <h3>B.Tech in Electrical and Electronics Engineering</h3>
-                            <span class="duration">2024 – 2028</span>
-                        </div>
-                        <p class="organization">National Institute of Technology Calicut (CGPA: 8.94)</p>
-                    </li>
-                    <li>
-                        <div class="timeline-header">
-                            <h3>Higher Secondary Education</h3>
-                            <span class="duration">2022 – 2024</span>
-                        </div>
-                        <p class="organization">Velammal Bodhi Campus, Tamil Nadu (95%, 475/500)</p>
-                    </li>
-                    <li>
-                        <div class="timeline-header">
-                            <h3>Secondary Schooling</h3>
-                            <span class="duration">2022</span>
-                        </div>
-                        <p class="organization">SBOA Mat. Hr. Sec. School, Coimbatore (95.8%, 479/500)</p>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="certifications fade-in" style="animation-delay: 0.6s;">
-                <h2>Certifications & Conferences</h2>
-                <ul>
-                    <li><strong>Certifications:</strong> Digital Design with Verilog (2026), Machine Learning with Python (2025), Python for Data Science (2025), Crash Course on Python (2024).</li>
-                    <li><strong>Symposiums/Workshops:</strong> Neuromorphic IC Design (Symposium); LTspice for Analog Circuit Simulation (Workshop).</li>
-                </ul>
-            </section>
-
-            <section class="extras fade-in" style="animation-delay: 0.7s;">
-                <h2>Activities & Achievements</h2>
-                <ul>
-                    <li><strong>Activities:</strong> Junior Executive at Robotics Interest Group.</li>
-                    <li><strong>Coursework:</strong> Semiconductor Physics, Power Electronics, Control Systems, Microprocessors, Microcontrollers, Electronics Lab.</li>
-                    <li><strong>Achievement:</strong> Winner, Digital/Analog/Embedded Aptitude Test.</li>
-                    <li><strong>Languages:</strong> English (Fluent), Tamil (Fluent), Hindi (Conversational).</li>
-                    <li><strong>Hobbies:</strong> Robotics, playing and watching football, geography games and trivia.</li>
-                </ul>
-            </section>
-            
-            <section class="contact fade-in" style="animation-delay: 0.8s;">
-                <h2>Get in Touch</h2>
-                <p>I'm always open to discussing new projects, creative ideas, or opportunities. Feel free to reach out to me.</p>
-                <a href="mailto:k.a.harish2019@gmail.com" class="btn">Say Hello</a>
+            <section id="contact" class="contact hidden">
+                <h2 class="section-title">Get In Touch</h2>
+                <p>I'm currently looking for new opportunities. Whether you have a question, a project idea, or just want to say hi, I'll try my best to get back to you!</p>
+                <div class="contact-links">
+                    <a href="mailto:k.a.harish2019@gmail.com" class="btn btn-primary">Email Me</a>
+                    <a href="#" class="btn btn-outline">LinkedIn</a>
+                    <a href="#" class="btn btn-outline">GitHub</a>
+                </div>
             </section>
         </main>
         
-        <footer class="fade-in" style="animation-delay: 0.9s;">
-            <p>&copy; 2026 Harish Kumar K A. Built with minimalism in mind.</p>
+        <footer>
+            <p>Designed & Built by Harish Kumar K A</p>
         </footer>
     </div>
     <script src="script.js"></script>
